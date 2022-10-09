@@ -1,0 +1,26 @@
+.Sidebar {
+    height: calc(100vh - var(--navbar-height));
+    width: var(--sidebar-width);
+    background-color: var(--bg-color-dark);
+    position: relative;
+    transition: width 0.3s linear;
+    padding: 10px;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.switchersWrapper {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+    & > *:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,21 @@
+.Navbar {
+    padding: 6px 0;
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color-dark);
+
+    & .navbar__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .nav__left {
+        & > *:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+}

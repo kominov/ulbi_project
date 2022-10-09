@@ -1,0 +1,22 @@
+@import "variables";
+@import "common";
+@import "./theme/indexTheme";
+
+.app {
+    font: var(--font-m);
+    background: var(--bg-color-primary);
+    color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    flex: 1;
+}
+
+.flex {
+    display: flex;
+}
