@@ -23,7 +23,11 @@ export const AppButton: FC<IAppButtonProps> = (props) => {
     return (
         <button
             type="button"
-            className={classNames(cls.AppButton, {}, [classNameProps, theme === Theme.DARK ? cls.dark : cls.light])}
+            className={classNames(
+                cls.AppButton,
+                {},
+                [classNameProps, themeBtn, theme === Theme.DARK ? cls.dark : cls.light],
+            )}
             {...otherProps}
         >
             {children}

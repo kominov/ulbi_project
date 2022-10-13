@@ -1,4 +1,6 @@
 {
   "Welcome to React": "Welcome to React",
-  "language": "en"
+  "language": "en",
+  "pageNotFound": "Page not found",
+  "error": "Ooops! Something wrong!"
 }

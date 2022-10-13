@@ -18,7 +18,7 @@ export function LanguageSwitcher(props: ILanguageSwitcherProps) {
             classNameProps={classNames('', {}, [classNameProps])}
             onClick={onToggle}
         >
-            {t('language')}
+            { t('language') }
         </AppButton>
 
     );

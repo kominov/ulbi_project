@@ -9,26 +9,16 @@ interface IThemeSwitcherProps {
 
 export function ThemeSwitcher(props: IThemeSwitcherProps) {
     const { classNameProps } = props;
-    const { theme, toggleTheme } = useTheme();
+    const { toggleTheme } = useTheme();
     return (
         <AppButton
             onClick={toggleTheme}
         >
-            {theme === Theme.LIGHT
-                ? (
-                    <LightTheme
-                        width={20}
-                        height={20}
-                        color="#fa7900"
-                    />
-                )
-                : (
-                    <DarkTheme
-                        width={20}
-                        height={20}
-                        color="#fa7900"
-                    />
-                )}
+            <LightTheme
+                width={20}
+                height={20}
+                color="#fa7900"
+            />
         </AppButton>
     );
 }

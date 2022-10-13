@@ -37,6 +37,7 @@ module.exports = {
         'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'no-trailing-spaces': 'off',
         'no-underscore-dangle': 'off',
+        'no-console': 'off',
 
     },
     globals: {
