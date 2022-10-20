@@ -38,6 +38,7 @@ module.exports = {
         'no-trailing-spaces': 'off',
         'no-underscore-dangle': 'off',
         'no-console': 'off',
+        'no-param-reassign': 'off',
 
     },
     globals: {
