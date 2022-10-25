@@ -3,10 +3,10 @@
     color: var(--primary-color);
 
     &.light {
-        color: black;
+        color: var(--primary-color);
     }
 
     &.dark {
-        color: white;
+        color: var(--primary-color);
     }
 }
