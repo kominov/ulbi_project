@@ -24,6 +24,7 @@ module.exports = {
         'react/jsx-indent': [2, 4, { checkAttributes: true }],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
+        'linebreak-style': 0,
         'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', 'tsx'] }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
