@@ -9,24 +9,41 @@ export const enum ThemeButton {
     SECONDARY = 'secondary'
 }
 
+export const enum SizeButton{
+    M = 'size_m',
+    L = 'size_l',
+    XL = 'size_xl'
+}
 interface IAppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     classNameProps?: string;
     themeBtn?: ThemeButton;
+    square?:boolean;
+    size?:SizeButton;
 }
 
 export const AppButton: FC<IAppButtonProps> = (props) => {
     const { theme } = useTheme();
     const {
-        classNameProps, themeBtn, children, ...otherProps
+        classNameProps,
+        themeBtn,
+        children,
+        square,
+        size,
+        ...otherProps
     } = props;
+
+    const mods: Record<string, boolean> = {
+        [cls.square]: square,
+
+    };
 
     return (
         <button
             type="button"
             className={classNames(
                 cls.AppButton,
-                {},
-                [classNameProps, cls[themeBtn], theme === Theme.DARK ? cls.dark : cls.light],
+                mods,
+                [classNameProps, cls[size], cls[themeBtn], theme === Theme.DARK ? cls.dark : cls.light],
             )}
             {...otherProps}
         >

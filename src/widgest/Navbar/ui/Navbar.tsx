@@ -1,6 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
+import { RoutePath } from 'shared/config/routeConfig';
 import cls from './Navbar.module.scss';
 
 interface INavbarProps {
@@ -21,13 +22,13 @@ export function Navbar(props: INavbarProps) {
                 <div className={cls.nav__left}>
                     <AppLink
                         theme={theme}
-                        to="/"
+                        to={RoutePath.main}
                     >
                         Home
                     </AppLink>
                     <AppLink
                         theme={theme}
-                        to="/about"
+                        to={RoutePath.about}
                     >
                         About
                     </AppLink>

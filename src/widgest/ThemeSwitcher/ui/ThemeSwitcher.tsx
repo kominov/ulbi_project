@@ -1,6 +1,5 @@
-import { Theme, useTheme } from 'app/providers/ThemeProvider';
+import { useTheme } from 'app/providers/ThemeProvider';
 import LightTheme from 'shared/assets/svg/navbar/ligth-theme.svg';
-import DarkTheme from 'shared/assets/svg/navbar/dark-theme.svg';
 import { AppButton } from 'shared/ui/AppButton/AppButton';
 
 interface IThemeSwitcherProps {
