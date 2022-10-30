@@ -1,7 +1,7 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { Link, LinkProps } from 'react-router-dom';
 import { FC } from 'react';
-import { Theme } from 'app/providers/ThemeProvider/lib/ThemeContext';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Theme } from '@/app/providers/ThemeProvider/lib/ThemeContext';
 import cls from './AppLink.module.scss';
 
 interface IAppLinkProps extends LinkProps {
