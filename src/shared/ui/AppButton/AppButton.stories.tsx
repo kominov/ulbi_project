@@ -83,7 +83,7 @@ export const SizeM = Template.bind({});
 SizeM.args = {
     children: '>',
     themeBtn: ThemeButton.SECONDARY,
-    size: SizeButton.XL,
+    size: SizeButton.M,
 };
 SizeM.decorators = [ThemeDecorator(Theme.DARK)];
 
@@ -91,7 +91,7 @@ export const SizeL = Template.bind({});
 SizeL.args = {
     children: '>',
     themeBtn: ThemeButton.SECONDARY,
-    size: SizeButton.XL,
+    size: SizeButton.L,
 };
 SizeL.decorators = [ThemeDecorator(Theme.DARK)];
 
