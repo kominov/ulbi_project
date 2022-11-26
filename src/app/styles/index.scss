@@ -2,10 +2,13 @@
 @import "common";
 @import "./theme/indexTheme";
 
-.app {
+body {
     font: var(--font-m);
-    background: var(--bg-color-primary);
     color: var(--primary-color);
+}
+
+.app {
+    background: var(--bg-color-primary);
     min-height: 100vh;
 }
 

@@ -43,7 +43,7 @@ export const AppButton: FC<IAppButtonProps> = (props) => {
             className={classNames(
                 cls.AppButton,
                 mods,
-                [classNameProps, cls[size], cls[themeBtn], theme === Theme.DARK ? cls.dark : cls.light],
+                [classNameProps, cls[size], cls[themeBtn], cls[theme]],
             )}
             {...otherProps}
         >

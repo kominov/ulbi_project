@@ -10,10 +10,6 @@
     min-height: 40px;
 }
 
-.clear {
-    padding: 0;
-}
-
 .light {
     background-color: var(--bg-color-secondary);
     border: 1px solid var(--primary-color);
@@ -22,6 +18,11 @@
 .dark {
     background-color: var(--bg-color-secondary);
     border: 1px solid var(--primary-color);
+}
+
+.clear {
+    outline: none;
+    border: none;
 }
 
 .primary {
