@@ -3,9 +3,7 @@ import cls from './Main.module.scss';
 
 function MainAbout() {
     return (
-        <div className={cls.mainPage}>
-            <Counter />
-        </div>
+        <div className={cls.mainPage} />
     );
 }
 
