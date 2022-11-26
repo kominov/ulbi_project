@@ -55,7 +55,7 @@ export function Modal(props: IModalProps) {
         <Portal>
             <div className={classNames(cls.Modal, mods, [classNameProps])}>
                 <div onClick={onCloseModal} className={cls.overlay}>
-                    <div className={classNames(cls.content, {}, [cls[theme]])} onClick={onContentClick}>
+                    <div className={classNames(cls.content, {}, [])} onClick={onContentClick}>
                         {children}
                     </div>
                 </div>
